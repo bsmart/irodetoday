@@ -15,45 +15,31 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
     </head>
-    <body>
+    <body id="top">
         <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container">
-            <section class="intro window">
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <img src="http://placehold.it/350x150" />
-                    </li>
-                    <li>
-                      <img src="http://placehold.it/350x150" />
-                    </li>
-                    <li>
-                      <img src="http://placehold.it/350x150" />
-                    </li>
-                    <li>
-                      <img src="http://placehold.it/350x150" />
-                    </li>
-                  </ul>
+        <header id="home">
+                <div class="nav_wrap">
+                    <nav>
+                        <ul>
+                            <li><a href="#welcome">Welcome</a></li>
+                            <li><a href="">Story</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Video</a></li>
+                            <li><a href="">Photo</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </nav>
                 </div>
-<!--                 <header>
-                    <div class="intro_callout">
-                        <h1>irodetoday</h1>
-                        <p>Lorem ipsum dolor sit amet, ut noster eripuit mea, mel te odio appetere. Nulla omnes ea pro.</p>
-                    </div>
-                </header> -->
-                <div class="scroll-down">
-                    <a href="" class="scroll-down_btn">find out more</a>
-                    <span></span>
+        </header>
+        <section id="welcome">
+            <div class="welcome_wrap">
+                <div class="nav-toggle_wrap">
+                    <a href="" id="nav-toggle"><span></span></a>
                 </div>
-            </section>
-            <section class="window"><img src="http://placehold.it/350x150"></section>
-            <section class="window"><img src="http://placehold.it/350x150"></section>
-            <section class="window"><img src="http://placehold.it/350x150"></section>
-            <section class="window"></section>
-            <section class="window"></section>
-        </div>
+            </div>
+        </section>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -72,8 +58,7 @@ ga('create','UA-XXXXX-X');ga('send','pageview');
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!--  <script src="scripts/preloadassets.js"></script> -->
-<script src="scripts/windows.js"></script>
-<script src="scripts/flexslider.js"></script>
+
 <!-- <script src="scripts/XHRLoader.js"></script> -->
 <!-- endbuild -->
 </body>

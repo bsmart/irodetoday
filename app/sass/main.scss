@@ -1,10 +1,12 @@
-@import "normalize.scss";
+@import "normalize";
 @import "bourbon";
 @import "grid-settings";
 @import "neat";
-@import "variables.scss";
-@import "colors.scss";
-@import "webfonts.scss";
+@import "variables";
+@import "colors";
+@import "webfonts";
+$fa-font-path: "../bower_components/fontawesome/fonts" !default;
+@import "font-awesome";
 
 // Your settings for Typesettings :)
 $font-sans: 'Varela Round', sans-serif;
@@ -21,136 +23,139 @@ $load-typesetted: true;
 
 @import "typesettings.scss";  // Here is the _typesettings.scss partial
 
+@import "global";
 @import "sections/section-hero";
+@import "sections/section-nav";
+
+
+
+
 
 // .container {display:none;}
 
-body {
-    color: $white;
-}
+// body {
+//     color: $white;
+// }
 
-a {
-    color: $white;
-    text-decoration: none;
-}
-nav {
-    margin: em(30) 0;
-    background-color: rgba(0,0,0,0.8);
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    a {
-        display: inline-block;
-    }
-    ul {
-        display: inline-block;
-        margin-bottom: em(10);
-    }
-}
 
-section {
-    position: relative;
-}
+// nav {
+//     margin: em(30) 0;
+//     background-color: rgba(0,0,0,0.8);
+//     position: absolute;
+//     width: 100%;
+//     top: 100%;
+//     left: 0;
+//     z-index: 10;
+//     a {
+//         display: inline-block;
+//     }
+//     ul {
+//         display: inline-block;
+//         margin-bottom: em(10);
+//     }
+// }
 
-.intro {
-    top:0;
-    margin: 0;
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
-    height: 1000px;
-    background: #000 url('../images/slide_2.jpg') center 0 no-repeat;
-    background-size: cover;
-    position: fixed;
-    .flexslider {
-        display: block;
-        position: relative; //fixed or absolute may be needed
-        height: 100%!important;
-        overflow: hidden!important;
-        width: 100%!important;
-        .flexslider .slides,
-        .flexslider .slides li{
-        width: 100%!important;
-        height: 100%!important;
-        }
+// section {
+//     position: relative;
+// }
 
-        .flexslider .slides img{
-        min-height: 100%;
-        min-width: 100%;
-        max-width: 10000%!important; //over ride any existing responsive image styling
-        margin: 0 auto!important;
-        }
-    }
+// .intro {
+//     top:0;
+//     margin: 0;
+//     padding: 0;
+//     min-width: 100%;
+//     min-height: 100%;
+//     height: 1000px;
+//     background: #000 url('../images/slide_2.jpg') center 0 no-repeat;
+//     background-size: cover;
+//     position: fixed;
+//     .flexslider {
+//         display: block;
+//         position: relative; //fixed or absolute may be needed
+//         height: 100%!important;
+//         overflow: hidden!important;
+//         width: 100%!important;
+//         .flexslider .slides,
+//         .flexslider .slides li{
+//         width: 100%!important;
+//         height: 100%!important;
+//         }
 
-    header {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        margin-top: -170px;
-        .intro_callout {
-            @include outer-container;
-            display: inline-block;
-            position: relative;
-            vertical-align: middle;
-            z-index: 1;
-            // @include span-columns(6);
-            // @include shift(2);
-            h1 {
-                margin: 0 auto;
-                position: relative;
-                letter-spacing: 0.1em;
-                font-weight: 400;
-                // @include setType(6, $ms-up2);
-            }
-            p {
-                max-width: 100%;
-            }
-        }
-    }
-}
+//         .flexslider .slides img{
+//         min-height: 100%;
+//         min-width: 100%;
+//         max-width: 10000%!important; //over ride any existing responsive image styling
+//         margin: 0 auto!important;
+//         }
+//     }
 
-.scroll-down {
-    position: absolute;
-    width: 100%;
-    bottom: 50px;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    .scroll-down_btn {
-        max-width: 240px;
-        margin: auto;
-        font-size: 1.5em;
-        color: #fff;
-        border: 3px solid white;
-        font-weight: 700;
-        padding: 10px 15px;
-        display: block;
-        text-transform: uppercase;
-        text-decoration: none;
-        }
-}
+//     header {
+//         text-align: center;
+//         position: absolute;
+//         top: 50%;
+//         width: 100%;
+//         margin-top: -170px;
+//         .intro_callout {
+//             @include outer-container;
+//             display: inline-block;
+//             position: relative;
+//             vertical-align: middle;
+//             z-index: 1;
+//             // @include span-columns(6);
+//             // @include shift(2);
+//             h1 {
+//                 margin: 0 auto;
+//                 position: relative;
+//                 letter-spacing: 0.1em;
+//                 font-weight: 400;
+//                 // @include setType(6, $ms-up2);
+//             }
+//             p {
+//                 max-width: 100%;
+//             }
+//         }
+//     }
+// }
 
-.preload {
-    display: block;
-    position: fixed;
-    width:100%;
-    height: 100%;
-    z-index: 9999;
-    text-align: center;
-}
+// .scroll-down {
+//     position: absolute;
+//     width: 100%;
+//     bottom: 50px;
+//     left: 0;
+//     margin: auto;
+//     text-align: center;
+//     .scroll-down_btn {
+//         max-width: 240px;
+//         margin: auto;
+//         font-size: 1.5em;
+//         color: #fff;
+//         border: 3px solid white;
+//         font-weight: 700;
+//         padding: 10px 15px;
+//         display: block;
+//         text-transform: uppercase;
+//         text-decoration: none;
+//         }
+// }
 
-.window{
-    width:100%;
-    height:100%;
-    position:absolute;
-}
+// .preload {
+//     display: block;
+//     position: fixed;
+//     width:100%;
+//     height: 100%;
+//     z-index: 9999;
+//     text-align: center;
+// }
 
-@for $i from 2 through 6{
-    .window:nth-child(#{$i}){
-        background:nth($colors, $i);
-        top:($i - 1) * 100%;
-    }
-}
+// .window{
+//     width:100%;
+//     height:100%;
+//     position:absolute;
+// }
+
+// @for $i from 2 through 6{
+//     .window:nth-child(#{$i}){
+//         background:nth($colors, $i);
+//         top:($i - 1) * 100%;
+//     }
+// }

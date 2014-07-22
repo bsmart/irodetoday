@@ -1,0 +1,20 @@
+.nav_wrap {
+    @include outer-container;
+
+    nav {
+        background: red;
+        ul {
+            margin: 1em;
+            li {
+                color: $nav-link-color;
+                position: relative;
+                display: block;
+                a {
+                    display: block;
+                    padding: 20px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

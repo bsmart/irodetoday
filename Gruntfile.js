@@ -44,6 +44,7 @@ module.exports = function(grunt) {
                         '<%= irodetoday.app %>/bower_components/bitters/app/assets/stylesheets',
                         '<%= irodetoday.app %>/bower_components/refills/source/stylesheets',
                         '<%= irodetoday.app %>/bower_components/normalize.css',
+                        '<%= irodetoday.app %>/bower_components/fontawesome/scss',
                         '<%= irodetoday.app %>/bower_components/modernizr'
                     ]
                 }

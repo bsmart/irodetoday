@@ -1,0 +1,26 @@
+html > * {
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: $black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    outline: none;
+}
+
+::selection {
+    color: $black;
+    background: $selection-bg;
+}
